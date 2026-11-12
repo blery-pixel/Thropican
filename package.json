@@ -1,0 +1,14 @@
+{
+  "name": "thropican-natural-juices",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thropican Natural Juices: static one-page juice shop with a 3D intro.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "http-server . -p 8000 -c-1 -o",
+    "start": "http-server . -p 8000 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

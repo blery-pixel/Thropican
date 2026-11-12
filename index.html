@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thropican</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section id="hero" aria-label="3D juice stand">
+  <canvas id="gl" aria-label="3D juice stand. Drag to rotate."></canvas>
+  <div id="hint">Press Enter</div>
+  <div class="hcopy">
+    <img class="hlogo" alt="Thropican juice splash logo with orange, mango, pineapple and passion fruit" width="520" height="518" src="assets/images/logo.webp">
+    <img class="hword" alt="Thropican Natural Juices. Taste the Tropics" width="800" height="269" src="assets/images/wordmark.webp">
+    <h2 class="hsplit">Taste the Tropics.<br>Feel the Freshness.</h2>
+    <p class="hsplit">Discover the natural goodness of freshly squeezed fruits. Bursting with vibrant flavors, pure ingredients, and tropical energy — every sip brings you closer to paradise.</p>
+    <div class="hpress" aria-hidden="true"><span class="hplabel hsplit">PRESS ENTER</span><span class="harrow"><svg viewBox="0 0 150 56" fill="none" stroke="#2b1d12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C 38 6, 92 4, 134 28"/></svg><svg viewBox="0 0 150 56" fill="none" stroke="#2b1d12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M124 10 L136 29 L114 28"/></svg></span></div>
+    <p class="htag hsplit">100% Fresh • Naturally Delicious • Made with Love</p>
+  </div>
+  <button id="spot" type="button" aria-label="Enter the Thropican site">Enter</button>
+  <div id="load">Loading the juice stand…</div>
+  
+  
+  <div id="splash"></div>
+  <div id="veil"></div>
+</section>
+<div id="site" hidden>
+<nav class="pillnav" aria-label="Thropican sections"><ul>
+  <li><a href="#home" data-go="home" class="on">Home</a></li>
+  <li><a href="#make" data-go="make">Make Your Own</a></li>
+  <li><a href="#products" data-go="products">Tropics</a></li>
+  <li><a href="#classic" data-go="classic">Classic</a></li>
+</ul></nav>
+
+<main id="home">
+
+<section id="story" style="padding-top:100px"><div class="w two story">
+  <div class="slogo"><img src="assets/images/wordmark.webp" alt="Thropican Natural Juices. Taste the Tropics" width="800" height="269"></div>
+  <div>
+    <h2>Squeezed fresh. Never rushed.</h2>
+    <p>At Thropican, every glass starts with the fruit, not a formula. We choose ripe mango, pineapple, orange, papaya, passion fruit and more, then prepare them by hand right at our stand.</p>
+    <p>No preservatives, no colorings, nothing hiding in the cup. Just real fruit, blended fresh and poured into a cold 400 ml glass, so a simple juice feels like a little tropical getaway.</p>
+  </div>
+</div>
+<div class="more"><button class="chev" id="roadBtn" type="button" aria-expanded="false" aria-controls="roadWrap" aria-label="Show the road from Pick to Deliver" title="See the road from Pick to Deliver"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></button></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><g id="spl" fill="#2b1d12"><path d="M100.0 35.7C102.3 37.1 104.3 38.1 106.5 38.5C108.7 38.9 110.7 38.6 113.2 38.0C115.6 37.4 118.3 36.0 121.2 34.9C124.1 33.7 127.5 31.9 130.6 31.2C133.8 30.5 137.3 29.9 140.0 30.7C142.7 31.4 145.2 33.1 146.9 35.5C148.5 37.8 149.3 41.4 149.8 44.7C150.3 47.9 150.0 51.8 150.0 55.0C150.1 58.1 149.8 61.1 150.1 63.6C150.4 66.1 150.9 68.1 151.9 70.0C152.9 71.9 154.4 73.4 156.2 75.0C158.0 76.6 160.5 77.9 162.8 79.6C165.2 81.3 168.1 83.0 170.3 85.1C172.5 87.1 174.8 89.5 176.0 92.0C177.2 94.5 177.8 97.4 177.5 100.0C177.2 102.6 175.7 105.4 174.1 107.8C172.5 110.2 169.8 112.4 167.7 114.4C165.6 116.4 163.1 118.1 161.5 120.0C159.8 121.9 158.5 123.6 157.9 125.8C157.2 128.0 157.3 130.4 157.5 133.2C157.7 136.0 158.6 139.5 158.9 142.8C159.2 146.2 159.8 150.2 159.2 153.3C158.7 156.5 157.6 159.8 155.7 161.9C153.8 164.0 150.9 165.4 147.9 166.0C144.9 166.6 141.1 166.0 137.8 165.5C134.5 165.1 131.0 163.6 128.2 163.3C125.3 163.0 123.0 162.8 120.7 163.8C118.5 164.8 116.9 167.6 114.8 169.5C112.6 171.4 110.4 174.7 107.9 175.1C105.4 175.5 102.4 173.9 100.0 171.8C97.6 169.7 95.4 165.1 93.5 162.3C91.5 159.5 90.0 156.8 88.3 155.2C86.5 153.7 84.8 153.1 82.9 152.8C80.9 152.4 78.8 152.7 76.3 153.1C73.9 153.5 71.2 154.4 68.1 155.2C65.1 156.0 61.5 157.2 58.1 157.7C54.6 158.3 50.6 158.9 47.3 158.5C44.1 158.1 40.7 157.1 38.4 155.4C36.2 153.7 34.5 151.0 33.7 148.2C32.8 145.4 33.0 141.8 33.3 138.5C33.5 135.3 34.7 131.8 35.3 128.8C35.9 125.8 36.8 123.0 36.8 120.5C36.9 118.0 36.6 115.9 35.8 113.7C34.9 111.4 33.2 109.5 31.6 107.2C29.9 104.9 27.4 102.6 25.7 100.0C24.1 97.4 22.1 94.5 21.4 91.7C20.8 89.0 20.7 85.9 21.7 83.4C22.7 80.8 24.9 78.4 27.3 76.4C29.7 74.4 33.2 72.9 36.2 71.6C39.1 70.2 42.4 69.4 45.0 68.2C47.5 67.1 49.8 66.2 51.6 64.8C53.3 63.4 54.5 62.0 55.5 59.9C56.4 57.9 56.8 55.4 57.3 52.6C57.8 49.8 57.9 46.3 58.6 43.0C59.3 39.7 59.9 35.8 61.3 32.9C62.6 29.9 64.4 26.9 66.7 25.2C69.0 23.5 72.0 22.6 74.9 22.6C77.8 22.6 81.1 23.8 84.1 25.2C87.1 26.5 90.1 28.8 92.7 30.6C95.4 32.3 97.7 34.4 100.0 35.7Z"><animate attributeName="d" dur="9s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.33;.66;1" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1" values="M100.0 35.7C102.3 37.1 104.3 38.1 106.5 38.5C108.7 38.9 110.7 38.6 113.2 38.0C115.6 37.4 118.3 36.0 121.2 34.9C124.1 33.7 127.5 31.9 130.6 31.2C133.8 30.5 137.3 29.9 140.0 30.7C142.7 31.4 145.2 33.1 146.9 35.5C148.5 37.8 149.3 41.4 149.8 44.7C150.3 47.9 150.0 51.8 150.0 55.0C150.1 58.1 149.8 61.1 150.1 63.6C150.4 66.1 150.9 68.1 151.9 70.0C152.9 71.9 154.4 73.4 156.2 75.0C158.0 76.6 160.5 77.9 162.8 79.6C165.2 81.3 168.1 83.0 170.3 85.1C172.5 87.1 174.8 89.5 176.0 92.0C177.2 94.5 177.8 97.4 177.5 100.0C177.2 102.6 175.7 105.4 174.1 107.8C172.5 110.2 169.8 112.4 167.7 114.4C165.6 116.4 163.1 118.1 161.5 120.0C159.8 121.9 158.5 123.6 157.9 125.8C157.2 128.0 157.3 130.4 157.5 133.2C157.7 136.0 158.6 139.5 158.9 142.8C159.2 146.2 159.8 150.2 159.2 153.3C158.7 156.5 157.6 159.8 155.7 161.9C153.8 164.0 150.9 165.4 147.9 166.0C144.9 166.6 141.1 166.0 137.8 165.5C134.5 165.1 131.0 163.6 128.2 163.3C125.3 163.0 123.0 162.8 120.7 163.8C118.5 164.8 116.9 167.6 114.8 169.5C112.6 171.4 110.4 174.7 107.9 175.1C105.4 175.5 102.4 173.9 100.0 171.8C97.6 169.7 95.4 165.1 93.5 162.3C91.5 159.5 90.0 156.8 88.3 155.2C86.5 153.7 84.8 153.1 82.9 152.8C80.9 152.4 78.8 152.7 76.3 153.1C73.9 153.5 71.2 154.4 68.1 155.2C65.1 156.0 61.5 157.2 58.1 157.7C54.6 158.3 50.6 158.9 47.3 158.5C44.1 158.1 40.7 157.1 38.4 155.4C36.2 153.7 34.5 151.0 33.7 148.2C32.8 145.4 33.0 141.8 33.3 138.5C33.5 135.3 34.7 131.8 35.3 128.8C35.9 125.8 36.8 123.0 36.8 120.5C36.9 118.0 36.6 115.9 35.8 113.7C34.9 111.4 33.2 109.5 31.6 107.2C29.9 104.9 27.4 102.6 25.7 100.0C24.1 97.4 22.1 94.5 21.4 91.7C20.8 89.0 20.7 85.9 21.7 83.4C22.7 80.8 24.9 78.4 27.3 76.4C29.7 74.4 33.2 72.9 36.2 71.6C39.1 70.2 42.4 69.4 45.0 68.2C47.5 67.1 49.8 66.2 51.6 64.8C53.3 63.4 54.5 62.0 55.5 59.9C56.4 57.9 56.8 55.4 57.3 52.6C57.8 49.8 57.9 46.3 58.6 43.0C59.3 39.7 59.9 35.8 61.3 32.9C62.6 29.9 64.4 26.9 66.7 25.2C69.0 23.5 72.0 22.6 74.9 22.6C77.8 22.6 81.1 23.8 84.1 25.2C87.1 26.5 90.1 28.8 92.7 30.6C95.4 32.3 97.7 34.4 100.0 35.7Z;M100.0 25.8C102.6 27.8 104.9 29.8 107.3 30.9C109.6 32.0 111.9 32.4 114.3 32.6C116.8 32.9 119.4 32.3 122.0 32.4C124.5 32.5 127.4 32.4 129.7 33.4C132.0 34.3 134.2 35.9 135.8 38.0C137.4 40.1 138.4 43.2 139.3 45.9C140.1 48.7 140.4 51.9 141.0 54.5C141.6 57.0 141.9 59.4 142.9 61.4C143.8 63.3 144.9 64.8 146.7 66.1C148.4 67.4 150.6 68.3 153.2 69.3C155.7 70.4 159.0 71.1 162.1 72.4C165.2 73.6 168.9 74.9 171.7 76.7C174.4 78.5 177.3 80.8 178.9 83.2C180.4 85.7 181.2 88.7 181.1 91.5C180.9 94.3 179.5 97.3 177.9 100.0C176.3 102.7 173.7 105.2 171.6 107.5C169.4 109.8 166.9 111.8 165.0 113.8C163.1 115.8 161.4 117.6 160.2 119.6C159.1 121.6 158.4 123.5 158.1 125.9C157.8 128.2 158.1 130.8 158.5 133.8C159.0 136.8 160.0 140.4 160.5 144.0C161.0 147.6 161.8 151.9 161.5 155.4C161.2 158.9 160.4 162.7 158.6 165.1C156.8 167.5 153.9 169.2 150.7 169.8C147.5 170.4 143.3 169.6 139.6 168.5C135.8 167.5 131.7 165.2 128.3 163.5C124.8 161.8 121.7 159.6 119.0 158.5C116.3 157.3 114.1 156.3 112.0 156.5C109.9 156.8 108.3 158.2 106.3 159.8C104.3 161.4 102.2 164.7 100.0 166.0C97.8 167.3 95.1 168.2 92.9 167.5C90.7 166.8 88.7 163.7 86.9 161.8C85.0 159.8 83.7 157.1 81.9 155.8C80.1 154.5 78.3 154.1 76.0 154.0C73.7 153.9 71.1 154.6 68.1 155.2C65.2 155.8 61.8 156.8 58.3 157.4C54.8 157.9 50.8 158.6 47.4 158.5C43.9 158.3 40.2 157.7 37.4 156.3C34.7 154.9 32.4 152.7 31.0 150.1C29.6 147.6 29.2 144.1 29.0 141.0C28.8 137.8 29.6 134.3 29.7 131.3C29.8 128.3 30.2 125.5 29.6 122.9C29.0 120.3 27.8 118.1 26.4 115.7C24.9 113.2 22.4 110.9 20.7 108.3C19.1 105.7 17.0 102.8 16.5 100.0C16.0 97.2 16.2 94.0 17.6 91.3C18.9 88.7 21.8 86.1 24.7 84.0C27.6 81.9 31.6 80.3 34.9 78.8C38.2 77.4 41.7 76.4 44.4 75.3C47.2 74.1 49.5 73.2 51.3 71.9C53.2 70.7 54.6 69.4 55.7 67.8C56.8 66.2 57.5 64.5 58.1 62.3C58.7 60.1 59.0 57.7 59.2 54.7C59.5 51.8 59.5 48.3 59.8 44.6C60.1 41.0 60.3 36.6 61.2 32.7C62.0 28.9 63.2 24.5 65.0 21.5C66.9 18.4 69.4 15.7 72.2 14.5C75.0 13.2 78.5 13.2 81.7 14.0C84.9 14.7 88.4 16.9 91.5 18.9C94.5 20.9 97.4 23.8 100.0 25.8Z;M100.0 38.7C102.2 39.3 104.2 39.2 106.4 38.7C108.7 38.2 111.1 36.8 113.6 35.8C116.2 34.9 119.1 33.3 121.8 32.8C124.5 32.4 127.5 32.2 129.8 33.2C132.0 34.1 134.1 36.1 135.6 38.4C137.0 40.7 137.9 44.0 138.7 46.7C139.5 49.5 139.8 52.6 140.5 55.0C141.2 57.5 141.7 59.7 142.7 61.5C143.7 63.4 144.9 64.9 146.4 66.3C147.9 67.7 149.7 68.8 151.9 70.0C154.1 71.2 156.7 72.2 159.6 73.5C162.4 74.7 165.9 75.9 169.2 77.5C172.5 79.1 176.4 80.9 179.4 83.1C182.3 85.4 185.3 88.1 186.9 90.9C188.4 93.7 189.1 97.0 188.6 100.0C188.1 103.0 186.1 106.2 183.8 108.8C181.5 111.5 177.8 113.8 174.7 115.9C171.5 117.9 167.7 119.5 164.7 121.0C161.7 122.6 158.9 123.8 156.7 125.2C154.5 126.7 152.8 128.0 151.6 129.8C150.4 131.6 149.8 133.5 149.4 135.9C148.9 138.2 149.1 141.1 148.8 144.0C148.6 146.9 148.7 150.4 148.0 153.3C147.3 156.2 146.3 159.4 144.7 161.5C143.0 163.6 140.6 165.1 138.0 165.8C135.4 166.5 132.1 166.0 129.2 165.6C126.3 165.2 123.2 163.8 120.7 163.6C118.1 163.3 115.9 163.3 113.7 164.3C111.4 165.3 109.6 168.1 107.3 169.7C105.0 171.2 102.4 173.5 100.0 173.6C97.6 173.7 94.9 171.7 92.6 170.2C90.3 168.6 88.5 165.6 86.3 164.3C84.2 163.1 82.2 162.5 79.6 162.7C77.1 162.9 74.2 164.3 70.9 165.3C67.7 166.4 63.8 168.2 60.1 169.1C56.4 170.0 52.1 171.0 48.6 170.7C45.1 170.5 41.5 169.5 39.2 167.6C36.8 165.6 35.1 162.5 34.3 159.1C33.6 155.8 34.1 151.4 34.6 147.5C35.2 143.6 36.9 139.4 37.8 135.9C38.8 132.4 40.1 129.2 40.5 126.5C40.9 123.8 40.8 121.6 40.0 119.5C39.1 117.4 37.4 115.7 35.5 113.7C33.7 111.7 31.0 109.7 29.1 107.5C27.2 105.2 25.1 102.6 24.3 100.0C23.4 97.4 23.3 94.5 24.1 92.0C24.9 89.5 27.0 87.0 29.0 84.9C31.1 82.8 34.0 81.0 36.4 79.3C38.8 77.6 41.3 76.3 43.2 74.7C45.1 73.2 46.7 71.7 47.9 69.9C49.1 68.1 49.8 66.2 50.4 64.0C51.0 61.7 51.1 59.1 51.4 56.2C51.6 53.3 51.6 50.0 52.0 46.7C52.5 43.5 52.8 39.7 53.9 36.6C55.0 33.5 56.5 30.3 58.6 28.2C60.6 26.2 63.4 24.7 66.2 24.2C69.1 23.7 72.6 24.3 75.7 25.3C78.9 26.3 82.2 28.3 85.1 30.0C88.0 31.7 90.7 33.9 93.2 35.4C95.7 36.8 97.8 38.2 100.0 38.7Z;M100.0 35.7C102.3 37.1 104.3 38.1 106.5 38.5C108.7 38.9 110.7 38.6 113.2 38.0C115.6 37.4 118.3 36.0 121.2 34.9C124.1 33.7 127.5 31.9 130.6 31.2C133.8 30.5 137.3 29.9 140.0 30.7C142.7 31.4 145.2 33.1 146.9 35.5C148.5 37.8 149.3 41.4 149.8 44.7C150.3 47.9 150.0 51.8 150.0 55.0C150.1 58.1 149.8 61.1 150.1 63.6C150.4 66.1 150.9 68.1 151.9 70.0C152.9 71.9 154.4 73.4 156.2 75.0C158.0 76.6 160.5 77.9 162.8 79.6C165.2 81.3 168.1 83.0 170.3 85.1C172.5 87.1 174.8 89.5 176.0 92.0C177.2 94.5 177.8 97.4 177.5 100.0C177.2 102.6 175.7 105.4 174.1 107.8C172.5 110.2 169.8 112.4 167.7 114.4C165.6 116.4 163.1 118.1 161.5 120.0C159.8 121.9 158.5 123.6 157.9 125.8C157.2 128.0 157.3 130.4 157.5 133.2C157.7 136.0 158.6 139.5 158.9 142.8C159.2 146.2 159.8 150.2 159.2 153.3C158.7 156.5 157.6 159.8 155.7 161.9C153.8 164.0 150.9 165.4 147.9 166.0C144.9 166.6 141.1 166.0 137.8 165.5C134.5 165.1 131.0 163.6 128.2 163.3C125.3 163.0 123.0 162.8 120.7 163.8C118.5 164.8 116.9 167.6 114.8 169.5C112.6 171.4 110.4 174.7 107.9 175.1C105.4 175.5 102.4 173.9 100.0 171.8C97.6 169.7 95.4 165.1 93.5 162.3C91.5 159.5 90.0 156.8 88.3 155.2C86.5 153.7 84.8 153.1 82.9 152.8C80.9 152.4 78.8 152.7 76.3 153.1C73.9 153.5 71.2 154.4 68.1 155.2C65.1 156.0 61.5 157.2 58.1 157.7C54.6 158.3 50.6 158.9 47.3 158.5C44.1 158.1 40.7 157.1 38.4 155.4C36.2 153.7 34.5 151.0 33.7 148.2C32.8 145.4 33.0 141.8 33.3 138.5C33.5 135.3 34.7 131.8 35.3 128.8C35.9 125.8 36.8 123.0 36.8 120.5C36.9 118.0 36.6 115.9 35.8 113.7C34.9 111.4 33.2 109.5 31.6 107.2C29.9 104.9 27.4 102.6 25.7 100.0C24.1 97.4 22.1 94.5 21.4 91.7C20.8 89.0 20.7 85.9 21.7 83.4C22.7 80.8 24.9 78.4 27.3 76.4C29.7 74.4 33.2 72.9 36.2 71.6C39.1 70.2 42.4 69.4 45.0 68.2C47.5 67.1 49.8 66.2 51.6 64.8C53.3 63.4 54.5 62.0 55.5 59.9C56.4 57.9 56.8 55.4 57.3 52.6C57.8 49.8 57.9 46.3 58.6 43.0C59.3 39.7 59.9 35.8 61.3 32.9C62.6 29.9 64.4 26.9 66.7 25.2C69.0 23.5 72.0 22.6 74.9 22.6C77.8 22.6 81.1 23.8 84.1 25.2C87.1 26.5 90.1 28.8 92.7 30.6C95.4 32.3 97.7 34.4 100.0 35.7Z"/></path><ellipse cx="24" cy="40" rx="4.6" ry="6" transform="rotate(-30 24 40)"/></g></defs></svg><div class="roadwrap" id="roadWrap" aria-hidden="true"><div class="roadin"><div class="w"><ol class="steps">
+  <li style="--x:11cqw;--y:11cqw;--w:14cqw;--rot:-10deg;--d:0s"><svg class="sh" viewBox="0 0 200 200" aria-hidden="true"><use href="#spl"/></svg><div class="tx"><b>🧺 Pick</b>Ripe, selected fruit chosen for true-to-nature flavor.</div><span class="ar" style="--ax:9.75cqw;--ay:7.00cqw;--al:8.00cqw;--rot:29.7deg;--sy:1" aria-hidden="true"><svg viewBox="0 0 150 56" fill="none" stroke="#2b1d12" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C 38 6, 92 4, 134 28"/><path d="M124 10 L136 29 L114 28"/></svg></span></li>
+  <li style="--x:30cqw;--y:25cqw;--w:14cqw;--rot:12deg;--d:-2s"><svg class="sh" viewBox="0 0 200 200" aria-hidden="true"><use href="#spl"/></svg><div class="tx"><b>🔪 Prepare</b>Washed, peeled and cut by hand at the stand.</div><span class="ar" style="--ax:9.40cqw;--ay:-6.51cqw;--al:7.70cqw;--rot:-28.7deg;--sy:-1" aria-hidden="true"><svg viewBox="0 0 150 56" fill="none" stroke="#2b1d12" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C 38 6, 92 4, 134 28"/><path d="M124 10 L136 29 L114 28"/></svg></span></li>
+  <li style="--x:50cqw;--y:11cqw;--w:16cqw;--rot:0deg;--d:-4s"><svg class="sh" viewBox="0 0 200 200" aria-hidden="true"><use href="#spl"/></svg><div class="tx"><b>🥭 Blend</b>Squeezed or blended fresh when you order.</div><span class="ar" style="--ax:10.10cqw;--ay:6.99cqw;--al:7.70cqw;--rot:28.7deg;--sy:1" aria-hidden="true"><svg viewBox="0 0 150 56" fill="none" stroke="#2b1d12" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C 38 6, 92 4, 134 28"/><path d="M124 10 L136 29 L114 28"/></svg></span></li>
+  <li style="--x:69cqw;--y:25cqw;--w:14cqw;--rot:-8deg;--d:-6s"><svg class="sh" viewBox="0 0 200 200" aria-hidden="true"><use href="#spl"/></svg><div class="tx"><b>🧊 Serve</b>Poured cold into 400 ml, with no preservatives or colorings.</div><span class="ar" style="--ax:9.75cqw;--ay:-7.00cqw;--al:8.00cqw;--rot:-29.7deg;--sy:-1" aria-hidden="true"><svg viewBox="0 0 150 56" fill="none" stroke="#2b1d12" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42 C 38 6, 92 4, 134 28"/><path d="M124 10 L136 29 L114 28"/></svg></span></li>
+  <li style="--x:89cqw;--y:11cqw;--w:14cqw;--rot:14deg;--d:-8s"><svg class="sh" viewBox="0 0 200 200" aria-hidden="true"><use href="#spl"/></svg><div class="tx"><b>🚚 Deliver</b>Brought fresh to your door, just as cold and fruity.</div></li></ol></div></div></div></section>
+
+<section id="make"><div class="w">
+  <h2>Make Your Own</h2>
+  <p class="sm">Pick up to 3 fruits and we squeeze it fresh for you · 400 ml · no preservatives, no colorings</p>
+  <div class="mk">
+    <div class="mkglass">
+      <svg viewBox="0 0 240 340" role="img" aria-label="Your custom juice cup">
+        <defs>
+          <clipPath id="mkClip"><path d="M52 100H188L172 298Q171 306 163 306H77Q69 306 68 298Z"/></clipPath>
+          <clipPath id="mkDome"><path d="M54 92C54 46 186 46 186 92Z"/></clipPath>
+          <linearGradient id="mkCup" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset=".2" stop-color="#fff" stop-opacity=".08"/><stop offset=".8" stop-color="#fff" stop-opacity=".04"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+          <filter id="mkBlur" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="4"/></filter>
+          <g id="mkGrads"></g>
+        </defs>
+        <ellipse cx="120" cy="317" rx="66" ry="8" fill="#5a2300" opacity=".38" filter="url(#mkBlur)"/>
+        <line x1="133" y1="14" x2="114" y2="262" stroke="#8a5a2b" stroke-opacity=".25" stroke-width="11" stroke-linecap="round"/>
+        <line x1="133" y1="14" x2="114" y2="262" stroke="#fff" stroke-opacity=".6" stroke-width="8" stroke-linecap="round"/>
+        <line x1="130.5" y1="18" x2="113" y2="250" stroke="#fff" stroke-opacity=".9" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M52 100H188L172 298Q171 306 163 306H77Q69 306 68 298Z" fill="#fff" fill-opacity=".16"/>
+        <g clip-path="url(#mkClip)"><g id="mkLiq"></g><g id="mkIce"></g>
+          <line x1="133" y1="14" x2="114" y2="262" stroke="#fff" stroke-opacity=".22" stroke-width="8" stroke-linecap="round"/></g>
+        <path d="M52 100H188L172 298Q171 306 163 306H77Q69 306 68 298Z" fill="url(#mkCup)"/>
+        <path d="M59 108L73 108L82 292L78 292Z" fill="#fff" fill-opacity=".4"/>
+        <path d="M177 112L182 112L170 290L167 290Z" fill="#fff" fill-opacity=".28"/>
+        <path d="M52 100H188L172 298Q171 306 163 306H77Q69 306 68 298Z" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="2"/>
+        <image id="cupLogo" x="87" y="146" width="66" height="66" preserveAspectRatio="xMidYMid meet" opacity=".97"/>
+        <image id="cupWord" x="73" y="210" width="94" height="32" preserveAspectRatio="xMidYMid meet" opacity=".97"/>
+        <g fill="#fff" fill-opacity=".55"><circle cx="70" cy="150" r="2.4"/><circle cx="66" cy="190" r="1.8"/><circle cx="78" cy="226" r="2.8"/><circle cx="74" cy="262" r="2"/><circle cx="168" cy="140" r="2.2"/><circle cx="172" cy="182" r="2.8"/><circle cx="164" cy="222" r="1.8"/><circle cx="160" cy="266" r="2.4"/><circle cx="88" cy="170" r="1.6"/><circle cx="152" cy="244" r="1.6"/></g>
+        <g clip-path="url(#mkDome)"><g id="mkTop"></g></g>
+        <path d="M54 92C54 46 186 46 186 92Z" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+        <path d="M66 86C70 60 98 53 118 53" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+        <rect x="46" y="90" width="148" height="12" rx="6" fill="#fff" fill-opacity=".55" stroke="#fff" stroke-opacity=".9"/>
+      </svg>
+      <div class="mkname" id="mkName" aria-live="polite">Pick your fruits</div>
+    </div>
+    <div class="mkctl">
+      <div class="chips" id="mkFruits" role="group" aria-label="Choose up to 3 fruits"></div>
+      <div class="mkrow"><span>Sweetness</span><div class="seg" id="mkSweet" role="group" aria-label="Sweetness"><button type="button" aria-pressed="false">No sugar</button><button type="button" aria-pressed="true">Light</button><button type="button" aria-pressed="false">Regular</button></div></div>
+      <div class="mkrow"><span>Ice</span><div class="seg" id="mkIceSel" role="group" aria-label="Ice"><button type="button" aria-pressed="true">With ice</button><button type="button" aria-pressed="false">No ice</button></div></div>
+      <div class="mksum" id="mkSum"></div>
+      <button class="mkbtn" id="mkAdd" type="button">ADD MY BLEND</button>
+    </div>
+  </div>
+</div></section>
+
+<section id="products"><div class="w">
+  <h2>Tropics</h2>
+  <p class="sm">No preservatives · No colorings · Selected fruits · One size: 400 ml</p>
+  <ul class="jump" id="jump" aria-label="Jump to a product"></ul>
+  <div id="list"></div>
+  <p class="all"><a href="#" data-go="products">Back to top of Tropics</a></p>
+</div></section>
+
+<section id="classic"><div class="w">
+  <h2>Classic</h2>
+  <p class="sm">Pure single-fruit favorites · 400 ml · fresh-squeezed · prices in DH (sample prices)</p>
+  <ul class="menu"><li data-n="Orange" data-p="20"><span>Orange</span><i></i><b>20 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Orange">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Orange">+</button></span></li><li data-n="Pineapple" data-p="25"><span>Pineapple</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Pineapple">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Pineapple">+</button></span></li><li data-n="Mango" data-p="25"><span>Mango</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Mango">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Mango">+</button></span></li><li data-n="Peach / Nectarine" data-p="25"><span>Peach / Nectarine</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Peach / Nectarine">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Peach / Nectarine">+</button></span></li><li data-n="Papaya" data-p="25"><span>Papaya</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Papaya">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Papaya">+</button></span></li><li data-n="Avocado" data-p="30"><span>Avocado</span><i></i><b>30 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Avocado">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Avocado">+</button></span></li><li data-n="Strawberry" data-p="25"><span>Strawberry</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Strawberry">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Strawberry">+</button></span></li><li data-n="Banana" data-p="20"><span>Banana</span><i></i><b>20 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Banana">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Banana">+</button></span></li><li data-n="Dragon Fruit" data-p="30"><span>Dragon Fruit</span><i></i><b>30 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Dragon Fruit">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Dragon Fruit">+</button></span></li><li data-n="Panaché (mixed fruit)" data-p="30"><span>Panaché (mixed fruit)</span><i></i><b>30 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Panaché (mixed fruit)">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Panaché (mixed fruit)">+</button></span></li><li data-n="Lemonade" data-p="20"><span>Lemonade</span><i></i><b>20 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Lemonade">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Lemonade">+</button></span></li><li data-n="Mint Lemonade" data-p="22"><span>Mint Lemonade</span><i></i><b>22 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Mint Lemonade">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Mint Lemonade">+</button></span></li><li data-n="Orange Carrot" data-p="25"><span>Orange Carrot</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Orange Carrot">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Orange Carrot">+</button></span></li><li data-n="Kiwi" data-p="25"><span>Kiwi</span><i></i><b>25 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Kiwi">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Kiwi">+</button></span></li><li data-n="Avocado &amp; Dried Fruits" data-p="35"><span>Avocado &amp; Dried Fruits</span><i></i><b>35 DH</b><span class="stp"><button type="button" class="qm" aria-label="Remove one Avocado &amp; Dried Fruits">&minus;</button><em>0</em><button type="button" class="qp" aria-label="Add Avocado &amp; Dried Fruits">+</button></span></li></ul>
+  <div class="cart"><p id="cartTxt" aria-live="polite">Tap + to add juices to your order.</p><button class="shop" id="cartShop" type="button">Shop Now</button></div>
+</div></section>
+
+<section class="news"><div class="w c">
+  <h2 style="font-size:22px">Sign up for fresh recipes, new flavors and tropical offers from Thropican.</h2>
+  <p>Join the Thropican Club</p>
+  <button class="btn" id="open">Get Updates</button>
+</div></section>
+
+<section><div class="w two">
+  <div>
+    <h2>Why Everyone’s Talking About Thropican</h2>
+    <p><strong>Made with Real Tropical Fruit</strong><br>Mango, pineapple, papaya, passion fruit, dragon fruit and peach, chosen for bold, true-to-nature flavor.</p>
+    <p><strong>Naturally Rich in Vitamin C</strong><br>Oranges, pineapple and mango are natural sources of vitamin C, and they are the heart of our blends.</p>
+    <p><strong>Fresh, Tropical Taste</strong><br>Bright, balanced sweetness that feels like a getaway in a glass.</p>
+    <a class="btn" href="#signature" data-go="signature">Discover Thropican Signature</a>
+  </div>
+  <div class="ph art" id="blendArt" style="height:300px"></div>
+</div></section>
+</main>
+
+<footer><div class="w">
+  <p>Follow Thropican: <a href="#" data-soon="Instagram">Instagram</a> · <a href="#" data-soon="YouTube">YouTube</a> · <a href="#" data-soon="Facebook">Facebook</a></p>
+  <div class="g">
+    <nav aria-label="Help"><h4>Help</h4><ul><li><a href="#" data-soon="Contact Us">Contact Us</a></li><li><a href="#" data-soon="Order Status">Order Status</a></li><li><a href="#" data-soon="Shipping">Shipping</a></li></ul></nav>
+    <nav aria-label="Shop and visit"><h4>Shop &amp; Visit</h4><ul><li><a href="#" data-soon="Where to Buy">Where to Buy</a></li><li><a href="#" data-soon="Wholesale">Wholesale</a></li><li><a href="#" data-soon="Visit Us">Visit Us</a></li></ul></nav>
+    <nav aria-label="Legal"><h4>Legal</h4><ul><li><a href="#" data-soon="About Thropican">About Thropican</a></li><li><a href="#" data-soon="Careers">Careers</a></li><li><a href="#" data-soon="Privacy Notice">Privacy Notice</a></li><li><a href="#" data-soon="Cookie Notice">Cookie Notice</a></li><li><a href="#" data-soon="Terms of Service">Terms of Service</a></li></ul></nav>
+  </div>
+
+</footer>
+
+<dialog id="dlg"><form method="dialog" id="f">
+  <h3 style="margin-top:0">Join the Thropican Club</h3>
+  <label>Email<input type="email" id="em" required autocomplete="email"></label>
+  <button class="btn" type="submit">Get Updates</button> <button class="btn" type="button" id="close">Close</button>
+</form></dialog>
+<button class="back" id="back" type="button">← Back to the stand</button>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="js/stand-3d.js"></script>
+<script src="js/products.js"></script>
+<script src="js/maker-nav.js"></script>
+<script src="js/qr-lib.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/road-toggle.js"></script>
+</body>
+</html>
